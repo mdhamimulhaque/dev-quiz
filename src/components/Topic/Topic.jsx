@@ -1,9 +1,10 @@
 import React from 'react';
+import Banner from '../Banner/Banner';
 
 const Topic = () => {
     return (
         <section>
-            topic
+            <Banner />
         </section>
     );
 };
