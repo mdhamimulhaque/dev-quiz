@@ -26,7 +26,7 @@ const Header = () => {
                                 to="/topic"
                                 aria-label="Topic"
                                 title="Topic"
-                                className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
+                                className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-indigo-500"
                             >
                                 Topic
                             </Link>
@@ -36,7 +36,7 @@ const Header = () => {
                                 to="/statistics"
                                 aria-label="Statistics"
                                 title="Statistics"
-                                className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
+                                className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-indigo-500"
                             >
                                 Statistics
                             </Link>
@@ -46,7 +46,7 @@ const Header = () => {
                                 to="/blog"
                                 aria-label="Blog"
                                 title="Blog"
-                                className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
+                                className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-indigo-500"
                             >
                                 Blog
                             </Link>
@@ -56,7 +56,7 @@ const Header = () => {
                                 to="/contact"
                                 aria-label="Contact"
                                 title="Contact"
-                                className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
+                                className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-indigo-500"
                             >
                                 Contact
                             </Link>
