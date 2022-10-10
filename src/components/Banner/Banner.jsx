@@ -96,7 +96,7 @@ const Banner = () => {
                                             type="submit"
                                             className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-indigo-700 hover:bg-gray-900 focus:shadow-outline focus:outline-none"
                                         >
-                                            Subscribe
+                                            Registration
                                         </button>
                                     </div>
                                     <p className="text-xs text-gray-600 sm:text-sm">
