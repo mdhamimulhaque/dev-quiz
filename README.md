@@ -2,10 +2,8 @@
 
 ## Project Information:
 
-### `Project Name :`
-Dev Quiz
-
-Live : [dev-quiz](https://hami-dev-quiz.netlify.app/).
+### `Project Name :` Dev Quiz
+Live : [Dev Quiz](https://hami-dev-quiz.netlify.app/).
 
 ### `Tools Use :`
 
