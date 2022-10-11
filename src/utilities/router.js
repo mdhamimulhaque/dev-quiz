@@ -7,6 +7,7 @@ import Error from "../components/Error/Error";
 import { createBrowserRouter } from "react-router-dom";
 import Quizzes from "../components/Quizzes/Quizzes";
 
+
 export const router = createBrowserRouter([
     {
         path: "/",

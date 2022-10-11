@@ -1,19 +1,26 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Post from '../Post/Post';
 
 const Blog = () => {
     const blogs = [
         {
+            id: 1,
             title: "What is the purpose of react router?",
-            ans: ""
+            ans: "React Router is a standard library for routing in React. It enables the navigation among views of various components in a React Application, allows changing the browser URL, and keeps the UI in sync with the URL.React Router plays an important role to display multiple views in a single page application. Without React Router, it is not possible to display multiple views in React applications. Most of the social media websites like Facebook, Instagram uses React Router for rendering multiple views.",
+            date: ' 11 Oct 2022'
         },
         {
+            id: 2,
             title: "How does context api works?",
-            ans: ""
+            ans: "The React Context API is a way for a React app to effectively produce global variables that can be passed around. This is the alternative to prop drilling or moving props from grandparent to child to parent, and so on. Context is also touted as an easier, lighter approach to state management using Redux.",
+            date: ' 11 Oct 2022'
         },
         {
+            id: 3,
             title: "What is useRef?",
-            ans: ""
+            ans: "The useRef Hook allows you to persist values between renders. It can be used to store a mutable value that does not cause a re-render when updated. It can be used to access a DOM element directly.",
+            date: ' 11 Oct 2022'
         },
     ]
     return (
@@ -57,40 +64,11 @@ const Blog = () => {
                         Get update all the time...
                     </p>
                 </div>
+
                 <div className="grid max-w-sm gap-5 mb-8 lg:grid-cols-3 sm:mx-auto lg:max-w-full">
-                    <div className="px-10 py-20 text-center border rounded lg:px-5 lg:py-10 xl:py-20">
-                        <p className="mb-2 text-xs font-semibold tracking-wide text-gray-600 uppercase">
-                            11 Oct 2022
-                        </p>
-                        <Link
-                            to="/"
-                            className="inline-block max-w-xs mx-auto mb-3 text-2xl font-extrabold leading-7 transition-colors duration-200 hover:text-indigo-700"
-                            aria-label="Read article"
-                            title="Nori grape silver beet broccoli kombu beet"
-                        >
-                            Nori grape silver beet broccoli kombu beet
-                        </Link>
-                        <p className="max-w-xs mx-auto mb-2 text-gray-700">
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                            accusantium doloremque.
-                        </p>
-                        <Link
-                            to="/"
-                            aria-label=""
-                            className="inline-flex items-center font-semibold transition-colors duration-200 text-indigo-700 hover:text-deep-indigo-500"
-                        >
-                            Read more
-
-                            <svg
-                                className="inline-block w-3 ml-2"
-                                fill="currentColor"
-                                viewBox="0 0 12 12"
-                            >
-                                <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z" />
-                            </svg>
-                        </Link>
-                    </div>
-
+                    {
+                        blogs.map(post => <Post post={post} key={post.id} />)
+                    }
                 </div>
             </div>
         </section>

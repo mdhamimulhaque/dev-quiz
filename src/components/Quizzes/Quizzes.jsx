@@ -19,7 +19,7 @@ const Quizzes = () => {
                     </div>
 
                     <div className="quiz_count">
-                        <p className='text-xl'>Total Quiz : {questions.length}</p>
+                        <p className='text-xl my-3'>Total Quiz : {questions.length}</p>
                     </div>
                 </div>
             </div>
