@@ -4,7 +4,9 @@ import Quiz from '../Quiz/Quiz';
 
 const Quizzes = () => {
     const quizzes = useLoaderData();
-    const { id, logo, name, questions } = quizzes.data;
+    const { logo, name, questions } = quizzes.data;
+    console.log(quizzes)
+
     return (
         <section className='quizzes_container bg-slate-200'>
             <div className="p-6 py-12 dark:bg-violet-400 dark:text-gray-900">
@@ -23,7 +25,11 @@ const Quizzes = () => {
             </div>
 
             <div className="quiz_container lg:w-3/4 mx-auto">
-                {questions.map(quizQn => <Quiz key={quizQn.id} quizQn={quizQn} />)}
+                {questions.map(quizQn =>
+                    <Quiz
+                        key={quizQn.id}
+                        quizQn={quizQn}
+                    />)}
             </div>
         </section>
     );
