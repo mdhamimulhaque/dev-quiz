@@ -3,10 +3,12 @@ import Options from '../Options/Options';
 import { EyeIcon } from '@heroicons/react/24/solid'
 import { toast } from 'react-toastify';
 
-const Quiz = ({ quizQn }) => {
+const Quiz = ({ quizQn, index }) => {
     const { question, options, correctAnswer } = quizQn;
 
+
     const [answer, setRightAnswer] = useState('');
+
 
     const handleShowRightAnswer = (ans) => {
         setRightAnswer(ans);
@@ -26,7 +28,7 @@ const Quiz = ({ quizQn }) => {
                 </div>
             </span>
 
-            <h2 className='text-center text-2xl font-semibold mb-10'>{question}</h2>
+            <h2 className='text-center text-2xl font-semibold mb-10 px-5'><span className='text-indigo-700'>Quiz {index + 1} :</span> {question}</h2>
             <div className="quiz_options_box flex flex-wrap gap-8 px-5 justify-start  lg:justify-center">
                 {options.map((option, index) =>
                     <Options

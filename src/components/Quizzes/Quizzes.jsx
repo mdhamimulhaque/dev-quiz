@@ -25,10 +25,11 @@ const Quizzes = () => {
             </div>
 
             <div className="quiz_container lg:w-3/4 mx-auto">
-                {questions.map(quizQn =>
+                {questions.map((quizQn, index) =>
                     <Quiz
                         key={quizQn.id}
                         quizQn={quizQn}
+                        index={index}
                     />)}
             </div>
         </section>
