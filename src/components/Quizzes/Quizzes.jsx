@@ -6,7 +6,7 @@ const Quizzes = () => {
     const quizzes = useLoaderData();
     const { id, logo, name, questions } = quizzes.data;
     return (
-        <section className='quizzes_container'>
+        <section className='quizzes_container bg-slate-200'>
             <div className="p-6 py-12 dark:bg-violet-400 dark:text-gray-900">
                 <div className="container mx-auto">
                     <div className="flex flex-col lg:flex-row items-center justify-between">
@@ -14,6 +14,10 @@ const Quizzes = () => {
                         <div className="space-x-2 text-center py-2 lg:py-0 w-32 order-1 lg:order-2">
                             <img src={logo} alt="logo" />
                         </div>
+                    </div>
+
+                    <div className="quiz_count">
+                        <p className='text-xl'>Total Quiz : {questions.length}</p>
                     </div>
                 </div>
             </div>

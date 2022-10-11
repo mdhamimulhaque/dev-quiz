@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Test = ({ quizTopic }) => {
     const { id, logo, name, total } = quizTopic;
     return (
-        <section className='flex w-full px-5 flex-col justify-center bg-slate-50 max-w-xs  shadow-md rounded-xl sm:px-12 '>
+        <section className='flex w-full px-5 flex-col justify-center bg-slate-200 max-w-xs  shadow-md rounded-xl sm:px-12 '>
             <img src={logo} alt="" className="w-32 h-32 mx-auto rounded-full aspect-square" />
             <div className="space-y-4 text-center divide-y divide-gray-700">
                 <div className="my-2 space-y-1">
