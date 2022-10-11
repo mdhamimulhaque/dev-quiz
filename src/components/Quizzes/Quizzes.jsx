@@ -5,7 +5,6 @@ import Quiz from '../Quiz/Quiz';
 const Quizzes = () => {
     const quizzes = useLoaderData();
     const { logo, name, questions } = quizzes.data;
-    console.log(quizzes)
 
     return (
         <section className='quizzes_container bg-slate-200'>

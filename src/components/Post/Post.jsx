@@ -15,7 +15,7 @@ const Post = ({ post }) => {
                 {post?.date}
             </p>
             <Link
-                to="/"
+                onClick={handlePostDetails}
                 className="inline-block max-w-xs mx-auto mb-3 text-2xl font-extrabold leading-7 transition-colors duration-200 hover:text-indigo-700"
                 aria-label="Read article"
                 title="Nori grape silver beet broccoli kombu beet"
