@@ -13,8 +13,7 @@ const Header = () => {
                         to="/"
                         aria-label="Company"
                         title="Company"
-                        className="inline-flex items-center"
-                    >
+                        className="inline-flex items-center">
                         <img src={Logo} alt="logo" className='w-10' />
                         <span className="ml-2 text-xl font-bold tracking-wide text-gray-100 uppercase">
                             Dev Quiz
